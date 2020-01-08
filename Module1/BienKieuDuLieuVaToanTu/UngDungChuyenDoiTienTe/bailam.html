@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChuyenDoiTienTe</title>
+</head>
+<body>
+<form action="">
+    <input id="input1">
+
+    <select id="select1">
+        <option value ="VND">VND</option>
+        <option value ="USD">USD</option>
+    </select>
+
+    <select id="select2">
+        <option value ="VND">VND</option>
+        <option value ="USD">USD</option>
+    </select>
+
+    <button type="button" id="button" onclick="x()">Convert</button>
+    <p id="ketqua"></p>
+</form>
+<script>
+    function x(){
+        var a;
+        var b;
+        var trans;
+
+        a=document.getElementById("select1").value;
+        b=document.getElementById("select2").value;
+
+        trans=parseFloat(document.getElementById("input1").value);
+
+        if(a=="VND" && b=="USD") {
+            trans = trans / 23000;
+            document.getElementById("ketqua").innerHTML = trans;
+        }
+        else if(a=="USD" && b=="VND"){
+            trans= trans *23000;
+            document.getElementById("ketqua").innerHTML= trans;
+        }
+        else document.getElementById("ketqua").innerHTML=trans;
+
+    }
+</script>
+</body>
+</html>
