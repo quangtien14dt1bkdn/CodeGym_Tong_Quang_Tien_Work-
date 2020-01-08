@@ -19,10 +19,19 @@
 
     //let TypeRoom=prompt("Enter Type Room: ");
     <select id="roomtype">
-        <option value = 500 >Villa</option>
-        <option value = 300 >House</option>
-        <option value = 100 >Room</option>
-        </select>
+        <option value = "Villa" >Villa</option>
+        <option value = "House" >House</option>
+        <option value =  "Room" >Room</option>
+        function x() {
+            var a;
+            var b;
+            var payment ;
+            a=document.getElementById("roomtype").value;
+            if(a =="Villa") payment = 500 ;
+            if(a =="House") payment = 300 ;
+            if(a =="Room" ) payment = 100 ;
+        }
+    </select>
 
     let RentDay=prompt("Enter Rent Day : ");
     let ServiceType=prompt("Enter Type Service : ");
