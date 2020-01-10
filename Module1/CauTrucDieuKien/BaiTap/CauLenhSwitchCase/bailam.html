@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>hienSoNgayTrongThang</title>
 </head>
 <body>
-$END$
+<form action="">
+    <input id = "NhapThang">
+    <button  id="1" onclick="cal(); return false;" >Ket Qua</button>
+    <p id="ketqua" ></p>
+</form>
+
+
+<script>
+    function cal() {
+        var t;
+        t=parseInt(document.getElementById("NhapThang").value);
+
+        switch(t){
+            case 1:
+                document.getElementById("ketqua").innerHTML="30ngay";
+                break;
+            case 2:
+                document.getElementById("ketqua").innerHTML="28ngay";
+                break;
+            case 3:
+                document.getElementById("ketqua").innerHTML="31ngay";
+                break;
+            case 4:
+                document.getElementById("ketqua").innerHTML="30ngay";
+                break;
+            case 5:
+                document.getElementById("ketqua").innerHTML="31ngay";
+                break;
+            case 6:
+                document.getElementById("ketqua").innerHTML="30ngay";
+                break;
+            case 7:
+                document.getElementById("ketqua").innerHTML="31ngay";
+                break;
+            case 8:
+                document.getElementById("ketqua").innerHTML="30ngay";
+                break;
+            case 9:
+                document.getElementById("ketqua").innerHTML="31ngay";
+                break;
+            case 10:
+                document.getElementById("ketqua").innerHTML="30ngay";
+                break;
+            case 11:
+                document.getElementById("ketqua").innerHTML="31ngay";
+                break;
+            case 12:
+                document.getElementById("ketqua").innerHTML="30ngay";
+                break;
+            default :
+                document.getElementById("ketqua").innerHTML="nhap lai";
+        }
+
+
+    }
+</script>
+
 </body>
 </html>

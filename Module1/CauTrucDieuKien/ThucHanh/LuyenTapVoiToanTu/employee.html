@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let message;
+    login = prompt("Message : ");
+
+    if (login == 'Employee') {
+        message = 'Hello';
+        alert(message);
+    } else if (login == 'Director') {
+        message = 'Greetings';
+        alert(message);
+    } else if (login == '') {
+        message = 'No login';
+        alert(message);
+    } else {
+        message = '';
+        alert(message);
+    }
+</script>
 </body>
 </html>

@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script language="javascript">
+    let sout, i, j, ketqua;
+    sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+    i = j = 1;
+    while (i <= 9) {
+        sout = sout + "<tr>";
+        while (j <= 9) {
+            ketqua= (i+1)*j;
+            sout = sout + "<td>" +(i+1) + "x" + j +"=" + ketqua + "</td>";
+            j++;
+        }
+        sout = sout + "</tr>";
+        j = 1;
+        i++;
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+</script>
 </body>
 </html>
