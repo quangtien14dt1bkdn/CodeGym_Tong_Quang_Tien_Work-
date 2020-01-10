@@ -6,25 +6,23 @@
 </head>
 <body>
 <script>
-    var N=1;
+    var N = 1;
     var count1 = 1;
     var count2 = 0;
 
-    while(count1 <=20)
-    {
+    while (count1 <= 20) {
         N++;
-        for(let i=1;i<=N;i++)
-        {
-            if( N % i == 0 )
-            {
+        for (let i = 1; i <= N; i++) {
+            if (N % i ==0) {
                 count2++;
             }
         }
-        if( count2 == 2)
-        {
-
-            document.write(N + " la so nguyen to thu " + count1 );
+        if (count2 == 2) {
+            document.write(N + " la so nguyen to thu " + count1+"<br/>");
+            count1++;
         }
+        console.log(N +" "+count2)
+        count2 = 0;
     }
 </script>
 
