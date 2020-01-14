@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>TuDien</title>
+  </head>
+
+
+  <body>
+
+    <form  action="">
+      <input type="text"  id="English"/>
+      <input type="button" value="Dich" onclick= "Search()"/>
+    <p id= "kq"></p>
+    </form>
+
+    <script>
+
+
+
+    function Search() {
+
+      let Eng=["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+      let Viet=["Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy", "Chủ Nhật"];
+      let x= (document.getElementById("English").value);
+
+        for( let i = 0; i<=6 ;i++)
+        {
+          if(Eng[i] === x) {
+            document.getElementById("kq").innerHTML = Viet[i];
+            break;
+          }
+          else if (Viet[i]==x){
+            document.getElementById("kq").innerHTML = Eng[i];
+            break;
+          }
+          else {
+            document.getElementById("kq").innerHTML= "Khong co ket qua ";
+          }
+      }
+    }
+
+    </script>
+
+  </body>
+</html>
