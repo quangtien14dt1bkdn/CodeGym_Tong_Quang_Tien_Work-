@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form >
+    <input type="text"   id = "value" ></input>
+    <input type="button" id = "enter" value="check" onclick="hienthi();"></input>
+    <div id="result"></div>
+</form>
+<script>
+
+  let n= parseInt(document.getElementById("value").value);
+  var x;
+
+
+  function check(y){
+      var flag = true;
+      if (y < 2){
+          flag = false;
+      }
+      else{
+          for (var i=2; i<y ; i++){
+              if (y % i == 0){
+                  flag = false;
+                  break;
+              }
+          }
+      }
+      return flag;
+  }
+
+  function hienthi() {
+      for(x=0;x<=n;x++){
+          if(check(x)) {
+              document.getElementById("result").innerHTML= x ;
+          }
+      }
+  }
+
+
+
+</script>
+</body>
+</html>
