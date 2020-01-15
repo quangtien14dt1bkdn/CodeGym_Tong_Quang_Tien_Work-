@@ -6,14 +6,11 @@
 </head>
 <body>
 <form >
-    <input type="text"   id = "value" ></input>
-    <input type="button" id = "enter" value="check" onclick="hienthi();"></input>
+    <input type="text" id="value"/>
+    <input type="button" id="enter" value="check" onclick="hienthi();"/>
     <div id="result"></div>
 </form>
 <script>
-
-  let n= parseInt(document.getElementById("value").value);
-  var x;
 
 
   function check(y){
@@ -33,7 +30,8 @@
   }
 
   function hienthi() {
-      for(x=0;x<=n;x++){
+      let n= parseInt(document.getElementById("value").value);
+      for(var x=0;x<=n;x++){
           if(check(x)) {
               document.getElementById("result").innerHTML= x ;
           }
