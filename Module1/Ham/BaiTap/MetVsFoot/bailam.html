@@ -2,17 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>chuyendoi</title>
+    <title>ChuyenDoiTienTe</title>
 </head>
 <body>
+<form action="">
+
+    <input type = "text" id="input1">
+    <button type="button" id="button1" onclick="footToMeter()">F-M</button>
+    <button type="button" id="button2" onclick="meterToFoot()">M-F</button>
+
+    <p id="ketqua"></p>
+</form>
+
 <script>
-    function hienthi() {
-        let n= parseInt(document.getElementById("value").value);
-        for(var x=0;x<=n;x++){
-            if(check(x)) {
-                document.getElementById("result").innerHTML= x ;
-            }
-        }
+    function footToMeter(){
+        var meter;
+        var foot;
+        foot = parseFloat(document.getElementById("input1").value);
+        meter = 0.305 * foot;
+        document.getElementById("ketqua").innerHTML = meter;
+    }
+
+    function meterToFoot(){
+        var foot;
+        var meter;
+        meter = parseFloat(document.getElementById("input1").value);
+        foot = 3.279 * meter;
+        document.getElementById("ketqua").innerHTML = foot;
     }
 
 </script>
