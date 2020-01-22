@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<script>
+
+    var star1= new Array ("Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus");
+    var star2= new Array ( "Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" , "Leo");
+    var z=6;
+    var x= prompt("Nhap vao mot ngoi sao trong chom sao Kim Nguu : ");
+    for (var i = 0; i < 7; i++) {
+        if(callname(x)){
+            alert("Ngoi sao co vi tri tuong ung trong chom Tieu Hung : " + star2[i]);
+            z--;
+        }
+    }
+    if(z==6){
+        alert("Khong co ngoi sao tuong ung!!")
+    }
+    function callname(a){
+        if(star1[a]===x){
+            return 1;
+        }
+        else return 0;
+    }
+
+</script>
+
+</body>
+</html>

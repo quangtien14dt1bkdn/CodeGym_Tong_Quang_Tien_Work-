@@ -5,38 +5,40 @@
     <title>Title</title>
 </head>
 <body>
-
 <script>
-    let Name=prompt("Enter Name :");
-    let IdCard=prompt("Enter ID Card :");
-    let Birthday=prompt("Enter Birthday (dd//MM/YY) :");
-    let Email=prompt("Enter Email :");
-    let Address=prompt("Enter Address : ");
-    let CustomerType=prompt("Enter Type :" );
+    let tenKH = prompt("Enter user name customer");
+    let soCMND = prompt("Enter ID car");
+    let ngaySinh =  prompt("Enter birthday customer(dd/MM/YYYY): ");
+    let email = prompt("Enter email customer");
+    let diaChi = prompt("Enter Address customer");
+    let loaiKH = prompt("Enter type customer");
+    let giamGia = prompt("Enter discount");
+    let soLuong = prompt("Enter number of Accompanying: ");
+    let soNgayThue = prompt("Enter rent day");
+    let loaiDichVu = prompt("Enter type service: ");
+    let loaiPhongThue = prompt("Enter type room: ");
 
-    let Discount=prompt("Enter Discount :");
-    let Accompanying=prompt("Enter Number Of Accompanying");
+    let tinhTien = 500 * Number.parseInt(soNgayThue) * (1- Number.parseInt(giamGia)/100);
 
-    //let TypeRoom=prompt("Enter Type Room: ");
-    <select id="roomtype">
-        <option value = "Villa" >Villa</option>
-        <option value = "House" >House</option>
-        <option value =  "Room" >Room</option>
-        function x() {
-            var a;
-            var b;
-            var payment ;
-            a=document.getElementById("roomtype").value;
-            if(a =="Villa") payment = 500 ;
-            if(a =="House") payment = 300 ;
-            if(a =="Room" ) payment = 100 ;
-        }
-    </select>
+    alert(
+        "Information of customer: \n" +
+        "Name : " + tenKH +
+        "\n ID Car:   " + soCMND +
+        "\n Birth day: " +ngaySinh+
+        "\n Email :" +email+
+        "\n Address: " +diaChi+
+        "\nType Customer: " + loaiKH+
+        "\n Discount :" +giamGia+
+        "\n Accompanying: " +soLuong+
+        "\n Discount: " +giamGia+
+        "\n Accompanying: " +soLuong+
+        "\n Rent day: " + soNgayThue+
+        "\n Type Service: " + loaiDichVu+
+        "\n Type Room: " + loaiPhongThue+
+        "\n Total pay: " +tinhTien
+    )
 
-    let RentDay=prompt("Enter Rent Day : ");
-    let ServiceType=prompt("Enter Type Service : ");
 
-let totalpays = Number.parseFloat(rentday)*((100-Number.parseFloat(Discount))/100 *
 </script>
 </body>
 </html>
