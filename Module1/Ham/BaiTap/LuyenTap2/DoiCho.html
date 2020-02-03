@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x = new Array();
+    var num1 = prompt();
+    var num2 = prompt();
+    x[0]= num1;
+    x[1] = num2;
+    document.write("so thu 1 la :"+ num1+"</br>" +"so thu 2 la :" + num2);
+    document.write("</br>");
+
+    function f(x) {
+        var a = x[0];
+        x[0]= x[1];
+         x[1]= a;
+    }
+
+    f(x);
+
+    document.write("so thu 1 la :"+ x[0]+"</br>" +"so thu 2 la :" + x[1]);
+
+</script>
+
+</body>
+</html>

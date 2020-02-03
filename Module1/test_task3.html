@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let checkValidate = false;
+    // let emailCustomer;
+    // let birthdayCustomer;
+    // let idCard;
+    // let discount;
+    // let numberOfAccompanying;
+    let rentDays;
+    do {
+        checkValidate = false;
+        rentDays = prompt("Enter rentdays:");
+        if (!isNaN(rentDays)) {
+            rentDays = Number.parseFloat(rentDays);
+            if (Number.isInteger(rentDays) && rentDays >= 0) {
+                checkValidate = true;
+            }
+        }
+        if (!checkValidate) {
+            alert("Rendays is invalid !!1 Please try again");
+        }
+    } while (!checkValidate)
+
+
+    // do {
+    //     checkValidate = false;
+    //     numberOfAccompanying = prompt("Enter number of accompaying:");
+    //     if (!isNaN(numberOfAccompanying)) {
+    //         numberOfAccompanying = Number.parseFloat(numberOfAccompanying);
+    //         if (numberOfAccompanying >= 0 && Number.isInteger(numberOfAccompanying) && numberOfAccompanying <= 5) {
+    //             checkValidate = true;
+    //         }
+    //     }
+    //     if (!checkValidate) {
+    //         alert("Accompanying is invalid . Please try again !!!");
+    //     }
+    //
+    // } while (!checkValidate)
+
+    // do {
+    //     checkValidate = false;
+    //     discount = prompt("Enter Discount:  ");
+    //     if (!isNaN(discount)) {
+    //         discount = Number.parseFloat(discount);
+    //         if (discount >= 0 && discount <= 100) {
+    //             checkValidate = true;
+    //         }
+    //     }
+    //     if (!checkValidate) {
+    //         alert("Discount is invalid . Please try again!!");
+    //     }
+    // }while(!checkValidate)
+
+
+    // do{
+    //     checkValidate = false;
+    //     idCard = prompt("Enter IdCard Number");
+    //
+    //     if (isNaN(idCard)) {
+    //         continue;// kiem tra idcard co phai so hay khong
+    //     }
+    //     idCard = Number.parseFloat(idCard);// chuyen day kis tu dang chuoi ve dang float
+    //     if (!Number.isInteger(idCard)) { // kiem tra so nguyen
+    //         alert("IdCard Is Invalid .Please Try Again !!");
+    //         continue;
+    //     }
+    //     if (idCard >= 100000000 && idCard <= 999999999) {
+    //         checkValidate = true;
+    //     } else {
+    //         alert("IdCard Is Invalid ,Please Try Again !!! ");
+    //     }
+    //
+    // }while(!checkValidate)
+    //
+    // do {
+    //     checkValidate = false;
+    //     birthdayCustomer = prompt("Enter BithdayCustomer(DD/MM/YYYY:");
+    //     if (birthdayCustomer.charAt(2) !== '/' || birthdayCustomer.charAt(5) !== '/') {
+    //         alert("Birthday Invalid  !!! Please Try Again");
+    //         continue;
+    //     }
+    //     let day = birthdayCustomer.substring(0, 2);
+    //     let month = birthdayCustomer.substring(3, 5);
+    //     let year = birthdayCustomer.substring(6, 10);
+    //     if (!isNaN(day) && !isNaN(month) && !isNaN(year)) {
+    //         day = parseFloat(day);
+    //         month = parseFloat(month);
+    //         year = parseFloat(year);
+    //         if (Number.isInteger(day) && Number.isInteger(month) && Number.isInteger(year)) {
+    //             if (day > 0 && day < 32 && month > 0 && month < 13 && year >= 1960 && year <= 2020) {
+    //                 checkValidate = true;
+    //             }
+    //         }
+    //     }
+    //     if (!checkValidate) {
+    //         alert("Birthday Is Invalid !!!");
+    //     }
+    // } while (!checkValidate);
+    //
+    // do {
+    //     checkValidate = true;
+    //     emailCustomer = prompt("Enter Email Customer ");
+    //     let countDot = 0;
+    //     let countA = 0;
+    //     for (let i = 0; i < emailCustomer.length; i++) {
+    //         if (emailCustomer.charAt(i)==="@") {
+    //             countA++;
+    //         }
+    //         if (emailCustomer.charAt(i) === ".") {
+    //             countDot++;
+    //         }
+    //     }
+    //     if (countA !== 1 || countDot < 1) {
+    //         checkValidate = false;
+    //     }
+    // } while (!checkValidate)
+
+    alert(
+     "Information Of Customer :\n " +
+    //     "\nName: " + nameCustomer +
+    //     "\nId Card :" + idCard
+    //   "\nBirthday : " + birthdayCustomer +
+    //    "\nEmail :" + emailCustomer
+    //     "\nAddress :" + addressCustomer +
+    //     "\nType Customer :" + typeCustomer +
+    //     "\nDiscount :" + discount
+      "\nAccompanying :" + numberOfAccompanying
+    //     "\nType Room :" + typeRoom +
+    //     "\nRent Days :" + rentDays +
+    //     "\nType Service :" + typeService +
+    //     "\nTotal Pays :" + totalPays
+     );
+
+</script>
+
+</body>
+</html>

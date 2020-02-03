@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x = new Array();
+    var i = parseInt(prompt("Nhap vao so phan tu cua mang: "));
+    for (let j = 0; j < i; j++) {
+        x[j] = parseFloat(prompt());
+    }
+    // var num1 = prompt();
+    // var num2 = prompt();
+    // x[0]= num1;
+    // x[1] = num2;
+    document.write(x);
+    document.write("</br>");
+    //
+    function f(x) {
+        for (let j = 0; j < i; j++) {
+            var temp = x[j];
+            x[j]= x[i-1-j];
+            x[i-j-1]= temp;
+        }
+    }
+
+    f(x);
+
+    document.write(x);
+
+</script>
+
+</body>
+</html>
