@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nameCustomer = prompt("Enter customer name:");
+    let nameStandardized = "";
+    nameCustomer = nameCustomer.trim().toLocaleLowerCase(); //cat di khoang trang hai dau = trim va chuyen tat ca ve chu thuong
+
+
+    for (i = 0; i < nameCustomer.length; i++) {
+        if (nameCustomer.charAt(i) === " " && nameCustomer.charAt(i + 1) === " ") {
+            continue;
+        }
+        if(nameCustomer.charAt())
+        nameStandardized += nameCustomer.charAt(i); // cong cac ki tu trong string lai
+    }
+
+    alert(
+        "Information Of Customer :\n " +
+        "\nName: " + nameStandardized
+        // "\nId Card :" + idCard +
+        // "\nBirthday : " + birthdayCustomer +
+        // "\nEmail :" + emailCustomer +
+        // "\nAddress :" + addressCustomer +
+        // "\nType Customer :" + typeCustomer +
+        // "\nDiscount :" + discount +
+        // "\nAccompanying :" + numberOfAccompanying +
+        // "\nType Room :" + typeRoom +
+        // "\nRent Days :" + rentDays +
+        // "\nType Service :" + typeService +
+        // "\nTotal Pays :" + totalPays
+    );
+
+</script>
+
+</body>
+</html>
