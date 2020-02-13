@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arrNameCustomers = ["a","b","c"];
+    let choose = prompt("1. Add new customer." +
+        "\n2. Delete customer.");
+    switch (choose) {
+        case "1":
+            let arrLength = prompt("Enter the number of customers you want to add:");
+            for (var i = 0; i < arrLength; i++) {
+                arrNameCustomers.push(prompt("Enter name customer no " + (i + 1)));
+            }
+
+            let Result = "";//sap xep chuoc khi xuat ra
+
+            arrNameCustomers.sort();
+            //arrNameCustomers.reverse();
+            alert(getNameFromArray());
+            break;
+
+        case "2":
+            let indexDelete = prompt("Enter customer's number you want to delete:" + getNameFromArray());
+            arrNameCustomers.splice(indexDelete-1, 1);
+            alert(getNameFromArray());
+            break;
+        default:
+            alert("Fail!!!");
+            break;
+    }
+
+    function getNameFromArray() {
+        var result="";
+        for (var i = 0; i < arrNameCustomers.length; i++) {
+            result += "\n" + (i + 1) + "." + arrNameCustomers[i];
+        }
+        return result;
+    }
+</script>
+
+</body>
+</html>

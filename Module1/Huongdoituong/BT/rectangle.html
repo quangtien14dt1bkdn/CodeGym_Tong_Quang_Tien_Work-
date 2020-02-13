@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1000x" height="500px" style="border:1px solid #d3d3d3;">
+</canvas>
+<script>
+    const DEFAULTX = 200;
+    const DEFAULTY = 200;
+    function rectangle(chieudai, chieurong) {
+        this.chieudai = chieudai;
+        this.chieurong = chieurong;
+        this.chuvi = function () {
+            var chuvi = (this.chieudai + this.chieurong) * 2;
+            return chuvi;
+        };
+        this.dientich = function () {
+            var dientich = this.chieudai * this.chieurong;
+            return dientich;
+        };
+        this.hienthi = function () {
+            var ctx = document.getElementById("myCanvas").getContext("2d");
+            ctx.beginPath();
+            ctx.rect(DEFAULTX, DEFAULTY, this.chieudai, this.chieurong);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+        };
+
+    }
+
+    var lan1 = new rectangle(8, 9);
+    lan1.hienthi();
+
+</script>
+
+</body>
+</html>

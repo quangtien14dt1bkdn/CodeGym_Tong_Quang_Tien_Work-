@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function temperature(C) {
+        this.doC = C;
+        this.doK = function () {
+            return this.doK = this.doC + 273;
+        };
+        this.doF = function () {
+            return this.doF = this.doC * 1.8 + 32;
+        };
+    }
+
+    var nhietdo = new temperature(25);
+    alert(nhietdo.doK());
+    alert(nhietdo.doF());
+</script>
+
+
+</body>
+</html>

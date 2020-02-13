@@ -8,20 +8,23 @@
 <script>
     let nameCustomer = prompt("Enter customer name:");
     let nameStandardized = "";
+
     nameCustomer = nameCustomer.trim().toLocaleLowerCase(); //cat di khoang trang hai dau = trim va chuyen tat ca ve chu thuong
 
-
-    for (i = 0; i < nameCustomer.length; i++) {
+    for (let i = 0; i < nameCustomer.length; i++) {
         if (nameCustomer.charAt(i) === " " && nameCustomer.charAt(i + 1) === " ") {
             continue;
         }
-        if(nameCustomer.charAt())
+        if (i === 0 || nameCustomer.charAt(i - 1) === " ") {
+            nameStandardized += nameCustomer.charAt(i).toUpperCase();
+        }
         nameStandardized += nameCustomer.charAt(i); // cong cac ki tu trong string lai
     }
+    nameCustomer = nameStandardized;
 
     alert(
         "Information Of Customer :\n " +
-        "\nName: " + nameStandardized
+        "\nName: " + nameCustomer
         // "\nId Card :" + idCard +
         // "\nBirthday : " + birthdayCustomer +
         // "\nEmail :" + emailCustomer +
