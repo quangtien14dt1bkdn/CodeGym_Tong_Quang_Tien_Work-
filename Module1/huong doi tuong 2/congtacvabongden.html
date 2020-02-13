@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<select id="button">
+    <option value="vn">TurnOn</option>
+    <option value="usd">TurnOff</option>
+</select>
+<script>
+    let switchButton = function () {
+        this.connectToLamp = function (electricLamp) {
+            this.con = electricLamp;
+        };
+        this.switchOn = function () {
+            this.con.turnOn();
+            return true;
+        };
+        this.switchOff = function () {
+            this.con.turnOff();
+            return false;
+        };
+
+    };
+    let electricLamp = function () {
+
+        this.turnOn = function () {
+
+        };
+        this.turnOff = function () {
+            this.status = false;
+        };
+    };
+
+
+</script>
+</body>
+</html>
