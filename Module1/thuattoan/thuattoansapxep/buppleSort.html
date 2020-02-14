@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    //TAO RA MANG NUMS
+    var nums = [];
+
+    for(var i=0; i<100; ++i){
+        nums[i] = Math.floor(Math.random() * 101);
+    }
+
+//HAM SAP SEP NOI BOT
+    function BubbleSort(nums) {
+        for (let i = 0; i < nums.length - 1; i++) {
+            for (let j = nums.length - 1; j > i; j--) {
+                if (nums[j] < nums[j - 1]) {
+                    swap(nums[j], nums[j - 1]);
+                }
+            }
+        }
+    }
+//HAM DOI VI TRI 2 PHAN TU TRONG MANG
+
+    function swap(a,b) {
+        let x = a;
+        a = b;
+        b = x;
+    }
+</script>
+
+</body>
+</html>

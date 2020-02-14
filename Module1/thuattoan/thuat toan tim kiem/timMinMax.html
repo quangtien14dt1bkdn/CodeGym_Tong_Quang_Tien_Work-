@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //HAM TIM MIN
+    function findMin(arr) {
+        var min = arr[0];
+        for (var i = 1; i < arr.length; ++i) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    //HAM TIM MAX
+    function findMax(arr) {
+        var max = arr[0];
+        for (var i = 1; i < arr.length; ++i) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    //
+    function seqSearch(arr, data) {
+        for (var i = 0; i < arr.length; ++i) {
+            if (arr[i] == data) {
+                return true;
+            }
+        }
+        return false;
+    }
+    // HAM DISPLAY MANG
+    function displayArr(arr) {
+        for (var i = 0; i < arr.length; ++i) {
+            document.write(arr[i] + " ");
+            if (i % 10 == 9) {
+                document.write("</br>");
+            }
+        }
+    }
+
+
+    // TAO MANG NUMS
+    var nums = [];
+
+    for(var i=0; i<100; ++i){
+        nums[i] = Math.floor(Math.random() * 101);
+    }
+    displayArr(nums);
+    document.write("</br>");
+
+    //var x = parseInt(prompt("Enter a number to search: "));
+
+    document.writeln("Min = : " + findMin(nums));
+    document.writeln("Max = : " + findMax(nums));
+
+</script>
+
+</body>
+</html>

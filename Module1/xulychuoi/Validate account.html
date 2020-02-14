@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str1 = "123abc_";
+    var str2 = ".@";
+    // var str3 = "abc@hotmail.com";
+
+    // var str4 = "@gmail.com";
+    // var str5 = "ab@gmail.";
+    // var str6 = "@#abc@gmail.com";
+
+
+    function validateAccount(str) {
+        regexp = /^[_a-z0-9]{6,}$/;
+        if (regexp.test(str)) {
+            document.write("true"+"</br>");
+
+        } else {
+            document.write("false"+"</br>");
+        }
+    }
+
+    validateAccount(str1);
+    validateAccount(str2);
+
+</script>
+
+</body>
+</html>

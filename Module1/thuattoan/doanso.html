@@ -6,13 +6,32 @@
 </head>
 <body>
 <script>
-    let x = prompt("Enter your to number to guess :");
-    let y = 70;
-    function f(x) {
-        if ((y - x) >= 20) {
-            alert("")
+    let state = true;
+    let y = 50;
+
+    function check(x) {
+        if ((y - x) > 0) {
+            alert("too low!");
+        }
+        if ((x - y) > 0) {
+            alert("too high");
+        }
+        if (x === y) {
+            alert("correct");
         }
     }
+
+    do {
+        let x = parseInt(prompt("Enter your to number to guess :"));
+        if (x >= 0 && x <= 100) {
+            check(x);
+        }
+        else{
+            alert("wrong number . please enter another number !!");
+        }
+    } while (state)
+
+
 </script>
 
 </body>

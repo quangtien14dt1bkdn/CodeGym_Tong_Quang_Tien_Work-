@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// HAM TIM NHUNG GIA TRI = data TRONG MANG NUMS
+    function seqSearch(arr, data) {
+        for (var i = 0; i < arr.length; ++i) {
+            if (arr[i] == data) {
+                return true;
+            }
+        }
+        return false;
+    }
+// HAM DISPLAY MANG
+    function displayArr(arr) {
+        for (var i = 0; i < arr.length; ++i) {
+            document.write(arr[i] + " ");
+            if (i % 10 == 9) {
+                document.write("</br>");
+            }
+        }
+    }
+
+
+// TAO MANG NUMS
+    var nums = [];
+
+    for(var i=0; i<100; ++i){
+        nums[i] = Math.floor(Math.random() * 101);
+    }
+
+var x = parseInt(prompt("Enter a number to search: "));
+
+if (seqSearch(nums, x)) {
+    document.writeln(x + " available"+ "</br>");
+}
+else {
+    document.writeln(x + " unvailable"+"</br>");
+}
+
+
+// HIEN MANG NUMS
+    displayArr(nums);
+
+
+    // putstr("Enter a number to search for: ");
+    // var num = parseInt(readline());
+    // print();
+    // if (seqSearch(nums, num)) {
+    //     print(num + " is in the array.");
+    // }
+    // else {
+    //     print(num + " is not in the array.");
+    // }
+    // print();
+    // dispArr(nums);
+
+</script>
+
+</body>
+</html>

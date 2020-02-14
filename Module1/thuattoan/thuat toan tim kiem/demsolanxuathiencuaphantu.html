@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // TAO MANG NUMS
+    var nums = [];
+
+    for(var i=0; i<100; ++i){
+        nums[i] = Math.floor(Math.random() * 101);
+    }
+
+    // HAM DISPLAY MANG
+    function displayArr(arr) {
+        for (var i = 0; i < arr.length; ++i) {
+            document.write(arr[i] + " ");
+            if (i % 10 == 9) {
+                document.write("</br>");
+            }
+        }
+    }
+    // HAM TIM NHUNG GIA TRI = data TRONG MANG NUMS
+    function seqSearch(arr, data) {
+        for (var i = 0; i < arr.length; ++i) {
+            if (arr[i] == data) {
+                return true;
+            }
+        }
+        return false;
+    }
+    //HAM COUNT DEM SO LAN XUAT HIEN CUA PHAN TU TRONG MANG
+    function count(x) {
+        let y = 0;
+        if (x) {
+            y++;
+        }
+        return y;
+    }
+
+    //MAIN
+    let number = parseInt(prompt("Enter a number to search:"));
+
+    displayArr(nums);
+    document.write("</br>");
+    document.write("so lan xuat hien cua trong mang cua so can tim la :" + count(seqSearch(nums, number)));
+
+</script>
+
+</body>
+</html>

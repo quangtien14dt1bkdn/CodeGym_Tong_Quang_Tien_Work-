@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function isFirstLetterUpperCase(str) {
+    //     regexp = /^[A-Z]/;
+    //     if (regexp.test(str)) {
+    //         document.write("String's first character is uppercase" + "<br />");
+    //     } else {
+    //         document.write("String's first character is not uppercase");
+    //     }
+    // }
+    function is_usZipCode(str) {
+        regexp = /^[0-9]{5}(?:-[0-9]{4})?$/;
+        if (regexp.test(str)) {
+            document.write("true");
+
+        } else {
+            document.write("false");
+        }
+    }
+
+    is_usZipCode("03201 - 2150");
+    is_usZipCode("7892");
+
+
+
+</script>
+
+
+</body>
+</html>
