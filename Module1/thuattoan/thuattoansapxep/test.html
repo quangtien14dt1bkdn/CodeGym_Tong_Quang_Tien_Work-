@@ -4,18 +4,16 @@
     <meta charset="utf-8">
 </head>
 <body>
-<h1>Học lập trình miễn phí tại freetuts.net</h1>
-
-<button onclick="myFunction()">Run</button>
-
-<p id="demo"></p>
 
 <script>
-    var str = 'freetuts.net la blog chia se kien thuc';
-    document.getElementById("demo").innerHTML = str;
-    function myFunction() {
-        document.getElementById("demo").innerHTML = str.split(' ');
+    function oddNumbers() {
+        var arr = [];
+        for(i=1;i<50;i=i+2){
+            arr.push(i);
+        }
+        return arr;
     }
+    x= oddNumbers()
 </script>
 </body>
 </html>
