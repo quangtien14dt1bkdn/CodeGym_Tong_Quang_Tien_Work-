@@ -1,9 +1,12 @@
 .div{
     border:1px solid #000000;
     padding: 3px;
+    /*float:left;*/
+    display:inline;
 }
 .span {
-    border: 1px solid red;
+    border: 1px solid #ff8ef3;
     padding: 3px;
+    display:block;
 }
 
