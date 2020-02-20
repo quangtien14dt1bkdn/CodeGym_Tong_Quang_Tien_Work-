@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var Arr = [];
+    let n = parseInt(prompt("Nhap vao so phan tu cua mang "));
+    if (n < 6) {
+        n = prompt("Vui long nhap lai gia tri cua x");
+    }
+    for (let i = 0; i < n; i++) {
+        Arr[i] = prompt("Nhap gia tri thu :" + (i + 1));
+    }
+    document.writeln(Arr+"</br>");
+    Arr.sort(function (a, b) {return(a-b)});
+    document.writeln(Arr);
+</script>
+
+</body>
+</html>

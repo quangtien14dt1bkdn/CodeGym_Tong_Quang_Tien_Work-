@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let ListEmployee = [];
+
+    function displayMainMenu() {
+        let choose = prompt(
+            "1.Login." +
+            "\n2.Register." +
+            "\n3.Exit."
+        );
+        switch (choose) {
+            case "1":
+                Login();
+                break;
+            case "2":
+                Register();
+                break;
+            case "3":
+                displayMainMenu();
+                break;
+            default:
+                alert("Fail!!!");
+        }
+    }
+
+    function validateEmail(str) {
+        regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (regexp.test(str)) {
+            return true;
+
+        } else {
+            return false;
+        }
+    }
+
+
+    function Register() {
+
+        let x = new Employee();
+        x.settendangnhap(prompt("Nhap ten dang nhap :"));
+        x.settennhanvien(prompt("Nhap ten nhan vien :"));
+        x.setmatkhau(prompt("Nhap  mat khau :"));
+        x.setngaysinh(prompt("Nhap  ngay sinh:"));
+        x.setCMND(prompt("Nhap so CMND:"));
+        x.setgioitinh(prompt("Nhap gioi tinh :"));
+        x.setdiachi(prompt("Nhap dia chi  :"));
+        x.setsodienthoai(prompt("Nhap so dien thoai :"));
+        x.setemail(prompt("Nhap email :"));
+        ListEmployee.push(x);
+        displayMainMenu();
+    }
+
+    function Login() {
+        let email = prompt("Nhap vao dia chi email");
+        if (validateEmail(email)) {
+            for (let i = 0; i < ListEmployee.length; i++) {
+                if (email === ListEmployee[i].getemail()) {
+                    let password = prompt("Nhap vao password");
+                    if (password === ListEmployee[i].getmatkhau()) {
+                         Display(ListEmployee[i]);
+                    }
+                }
+            }
+        } else {
+            displayMainMenu();
+        }
+    }
+
+    function Display(x) {
+        document.writeln(x.gettendangnhap()+"</br>");
+        document.writeln(x.gettennhanvien()+"</br>");
+        document.writeln(x.getmatkhau()+"</br>");
+        document.writeln(x.getngaysinh()+"</br>");
+        document.writeln(x.getCMND()+"</br>");
+        document.writeln(x.getgioitinh()+"</br>");
+        document.writeln(x.getdiachi()+"</br>");
+        document.writeln(x.getsodienthoai()+"</br>");
+        document.writeln(x.getemail()+"</br>");
+    }
+
+
+// doi tuong nhan vien
+    function Employee() {
+        this.settendangnhap = function (tendangnhap) {
+            this.tendangnhap = tendangnhap;
+        };
+        this.gettendangnhap = function () {
+            return this.tendangnhap;
+        };
+        //ten dang nhap
+        this.settennhanvien = function (tennhanvien) {
+            this.tennhanvien = tennhanvien;
+        };
+        this.gettennhanvien = function () {
+            return this.tennhanvien;
+        };
+        //ten nhan vien
+        this.setmatkhau = function (matkhau) {
+            this.tenmatkhau = matkhau;
+        };
+        this.getmatkhau = function () {
+            return this.tenmatkhau;
+        };
+        //mat khau
+        this.setngaysinh = function (ngaysinh) {
+            this.ngaysinh = ngaysinh;
+        };
+        this.getngaysinh = function () {
+            return this.ngaysinh;
+        };
+        //ngaysinh
+        this.setCMND = function (CMND) {
+            this.CMND = CMND;
+        };
+        this.getCMND = function () {
+            return this.CMND;
+        };
+        //CMND
+        this.setgioitinh = function (gioitinh) {
+            this.gioitinh = gioitinh;
+        };
+        this.getgioitinh = function () {
+            return this.gioitinh;
+        };
+        //gioi tinh
+        this.setdiachi = function (diachi) {
+            this.diachi = diachi;
+        };
+        this.getdiachi = function () {
+            return this.diachi;
+        };
+        //dia chi
+        this.setsodienthoai = function (sodienthoai) {
+            this.sodienthoai = sodienthoai;
+        };
+        this.getsodienthoai = function () {
+            return this.sodienthoai;
+        };
+        //so dien thoai
+        this.setemail = function (email) {
+            this.email = email;
+        };
+        this.getemail = function () {
+            return this.email;
+        };
+        //email
+    }
+
+    displayMainMenu();
+
+
+</script>
+
+
+</body>
+</html>

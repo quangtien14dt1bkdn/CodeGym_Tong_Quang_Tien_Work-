@@ -1,4 +1,4 @@
-uvar Mobile = function (tenDienThoai) {
+var Mobile = function (tenDienThoai) {
     this.tenDienThoai = tenDienThoai;
     this.vungNhoLuuTinNhanDangSoanThao = new Array();
     this.vungNhoLuuTinNhanTrongHopThuDen = new Array();

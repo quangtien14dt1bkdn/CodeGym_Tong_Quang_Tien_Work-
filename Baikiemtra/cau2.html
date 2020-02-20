@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+     var num = prompt("Nhap vao so can set:");
+     num.split();
+     // if (num.length != 4) {
+     //     num = prompt("Vui long nhap lai gia tri can xet !");
+     //     num.split();
+     // }
+     //document.write(num+"</br>");
+     //document.writeln(parseInt(num[0])+parseInt(num[1]));
+     function isNumber(num) {
+         if ((parseInt(num[0]) + parseInt(num[1])) == parseInt(num[2]) - parseInt(num[3])) {
+             document.write("true");
+         } else {
+             document.write("false");
+         }
+     }
+
+     isNumber(num);
+    // function isNumber(num) {
+    //     if ((parseInt(num[0]) + parseInt(num[1]) === parseInt(num[2]) - parseInt(num[3])){
+    //         document.writeln("So da nhap thoa man dieu kien.");
+    //     } else {
+    //         document.writeln("So khong thoa man dieu kien");
+    //     }
+    // }
+
+     // isNumber(num);
+</script>
+
+</body>
+</html>
