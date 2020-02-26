@@ -2,7 +2,7 @@ package thuchanh;
 
 import java.util.Scanner;
 
-public class Student {
+public class Student2 {
     public static void main(String[] args) {
         String[] students = {"Christian", "Michael", "Camila", "Sienna", "Tanya", "Connor", "Zachariah", "Mallory", "Zoe", "Emily"};
         Scanner scanner = new Scanner(System.in);
