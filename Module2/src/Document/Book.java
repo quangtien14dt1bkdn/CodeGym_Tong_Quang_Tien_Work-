@@ -29,7 +29,7 @@ public class Book extends Document {
     public String toString() {
         return "Book{" +
                 "author='" + author + '\'' +
-                ", numerPage=" + numerPage +
+                ", numberPage=" + numerPage +
                 ", id='" + id + '\'' +
                 ", nxb='" + nxb + '\'' +
                 ", number='" + number + '\'' +

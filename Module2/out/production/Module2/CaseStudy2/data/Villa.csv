@@ -1,0 +1,8 @@
+id,nameService,area,rentCost,maxNumberOfPeople,typeRent,roomStandard,description,poolArea,floor
+9fd6f0eebc5446b78341c0e92065d91d,tien,1.0,0.0,1,1,1,1,1.0,1
+460520e80a1946f7911bf64d70089391,4,4.0,0.0,4,4,4,4,4.0,4
+2f4e5434cdc340d188b1501ac5ae0f91,3,3.0,0.0,3,3,3,3,3.0,3
+bf1afd1af1744bda9be338410233ab33,1,1.0,0.0,1,1,1,1,1.0,1
+69b2c957631f4452b1f3311d39bfe085,1,1.0,0.0,1,1,1,1,1.0,1
+677407986f034928a2ed096c159fbbe2,Tien,40.0,10.0,2,Villa,Tini,food,40.0,2
+07576db4057746f2b97f12c8f4f035ce,Tien,40.0,12.0,2,Tini,Tini,food,40.0,2
