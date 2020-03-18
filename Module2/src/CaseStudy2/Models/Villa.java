@@ -50,7 +50,15 @@ public class Villa extends Services {
         this.floor = floor;
     }
 
-
+    @Override
+    public String toString() {
+        return "Villa{" +
+                "roomStandard='" + roomStandard + '\'' +
+                ", description='" + description + '\'' +
+                ", poolArea=" + poolArea +
+                ", floor=" + floor +
+                '}';
+    }
 
     @Override
     public String showInformation() {

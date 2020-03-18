@@ -50,6 +50,16 @@ public class House extends Services {
     }
 
     @Override
+    public String toString() {
+        return "House{" +
+                "roomStandard='" + roomStandard + '\'' +
+                ", description='" + description + '\'' +
+                ", poolArea=" + poolArea +
+                ", floor=" + floor +
+                '}';
+    }
+
+    @Override
     public String showInformation() {
         return "\nId Service:" + super.getId() +
                 "\nName service:" + super.getNameService() +

@@ -14,6 +14,13 @@ public class Room extends Services {
         return Bonus;
     }
 
+    @Override
+    public String toString() {
+        return "Room{" +
+                "Bonus='" + Bonus + '\'' +
+                '}';
+    }
+
     public void setBonus(String bonus) {
         Bonus = bonus;
     }
