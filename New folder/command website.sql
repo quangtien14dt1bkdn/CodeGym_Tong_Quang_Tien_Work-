@@ -1,0 +1,21 @@
+SET SQL_SAFE_UPDATES = 0;
+update products set price=price*110/100 where price<=100000;
+update products set discount=discount*105/100 where discount<=10;
+select * from products where discount<=10/100;
+select * from products where stock<=5;
+ select * from customers where address='Hải Châu';
+ select * from customers where year(birthday)=1990;
+ select * from customers where month(now())=month(birthday) and day(now())=day(birthday);
+ select * from orders where status='COMPLETED';
+ select * from orders where status='COMPLETED' and year(shipped_date)=year(now())and
+ month(shipped_date)=month(now())and day(shipped_date)=day(now());
+ select * from orders where status='CANCELED';
+ select * from orders where payment_type='CASH';
+ select * from orders where payment_type='CREADIT CARD';
+ select * from orders where shipping_City='Hà Nội';
+  select * from employees where month(now())=month(birthday) and day(now())=day(birthday);
+  select * from suppliers where name='SONY'or name='SAMSUNG'or name='TOSHIBA'or name='APPLE';
+   select products.name,categories.name as categoriesName from products join categories where categories.id=products.category_id;
+   select * from customers join orders on customers.id=orders.customer_id;
+   select * from products join categories on products.category_id=categories.id join suppliers on products.supplier_id=suppliers.id;
+   select categories.name,count(categories.id) from categories join products on products.category_id=categories.id group by categories.id;
