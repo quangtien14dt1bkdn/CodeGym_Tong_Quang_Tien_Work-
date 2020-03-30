@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9fdba22d-739e-43e8-8a31-69cbef011418" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Module2/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/Servelet/First_implements_Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/findDuplication/Dup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/findDuplication/DupByHashSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/findDuplication/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/findDuplication/JavaObjectSorting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../servlet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/Module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/Module2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/findDuplication/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/findDuplication/Main.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ZpRGvAdgbDuqtt2JiQbJhVzqqS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.33" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.33" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fdba22d-739e-43e8-8a31-69cbef011418" name="Default Changelist" comment="" />
+      <created>1585533956260</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585533956260</updated>
+      <workItem from="1585533963337" duration="1000" />
+      <workItem from="1585534124895" duration="94000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
